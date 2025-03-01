@@ -1,0 +1,96 @@
+a button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	font-size: 1rem;
+	display: inline-block;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	background: var(--yellow-bg);
+	color: var(--nc-lk-tx);
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+a button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
+	cursor: default;
+	opacity: .5;
+
+	/* Set the [X] cursor while hovering a disabled link */
+	cursor: not-allowed;
+}
+
+.button:focus,
+.button:enabled:hover,
+button:focus,
+button:enabled:hover,
+input[type="submit"]:focus,
+input[type="submit"]:enabled:hover,
+input[type="reset"]:focus,
+input[type="reset"]:enabled:hover,
+input[type="button"]:focus,
+input[type="button"]:enabled:hover {
+	background: var(--red-bg);
+}
+fieldset {
+	margin-top: 1rem;
+	padding: 2rem;
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+}
+
+legend {
+	padding: .5rem;
+	font-weight: 600;
+}
+
+textarea,
+select,
+input {
+	padding: 6px 12px;
+	margin-bottom: .5rem;
+	background: var(--nc-bg-2);
+	color: var(--nc-tx-2);
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+textarea:focus,
+select:focus,
+input:focus {
+	border: 1px solid var(--green-bg);
+}
+textarea,
+select,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+}
+
+/* fix */
+::-webkit-calendar-picker-indicator { 
+	background-color: var(--yellow-bg); 
+	border-radius: 50%;
+}
+
+/* innskráning */
+
+.login {
+	max-width: 30rem;
+	margin: .5rem;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Verkefni 2. Tafla og form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/01-new.css">
+    <link rel="stylesheet" href="css/02-grid.css">
+    <link rel="stylesheet" href="css/03-table.css">
+    <link rel="stylesheet" href="css/04-form.css">
+    <link rel="stylesheet" href="css/05-custom.css">
+    <link rel="stylesheet" href="css/06-menus.css">
+    <link rel="stylesheet" href="css/07-popup.css">
+    <link rel="stylesheet" href="css/08-takn.css">
+    <link rel="stylesheet" href="css/09-animation.css">
+    <link rel="stylesheet" href="css/10-slideshow.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body>
+  <nav class="topnav">
+    <input type="checkbox" id="toggle">
+    <label for="toggle">&#9776;</label>
+    <section class="topmenu">
+      <a href="#"><span class="icon-home"></span> WHO</a>
+      <a href="#"><span class="icon-spades"></span> WHERE</a>
+      <a href="#"><span class="icon-clubs"></span> WHEN</a>
+      <a href="#"><span class="icon-diamonds"></span> Buy Tickets</a>
+      <a href="#Login"><span class="icon-users"></span> LOGIN</a>
+      <div class="sociealbutts">
+        <a href="#"><span class="icon-facebook"></span></a>
+        <a href="#"><span class="icon-instagram"></span></a>
+        <a href="#"><span class="icon-youtube"></span></a>
+        <a href="#"><span class="icon-amazon"></span></a>
+      </div>
+    </section>
+  </nav>
+  <nav id="Login2">
+        <input type="checkbox" id="toggle2" hidden>
+        <label for="toggle2">&#63;</label>
+        <form action="#" class="chatbox">
+            <fieldset>
+                <legend>Spjallbox</legend>
+                <p>Nafn<input type="text" required></p>
+                <p>Netfang <input type="email" required></p>
+                <p>Skilaboð <textarea name="Skilaboð" id="skilabod"></textarea></p>
+                <p><input type="submit" value="Senda"></p>
+            </fieldset>
+        </form>
+        <h1 class="title animate__slideInDown">SUMMARHÁTÍÐ 2025</h1>
+    </nav>
+  <!--banner-->
+  <div class="bannerBg">
+    <section class="container">
+        <table>
+          <caption>Ho-kago Tea Time Festival</caption>
+          <thead>
+              <tr>
+                  <th>WHO</th>
+                  <th>WHERE</th>
+                  <th>WHEN</th>
+                  <th>ORDER</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td  data-label="WHO">MC-Gauti</td>
+                  <td  data-label="WHERE">Skali-1</td>
+                  <td  data-label="WHEN">12. 06. 2025. kl. 13:35</td>
+                  <td  data-label="ORDER"><button>REGISTER</button></td>
+              </tr>
+              <tr>
+                  <td data-label="WHO">Herra Hnetusmjör</td>
+                  <td data-label="WHERE">Skali-1</td>
+                  <td data-label="WHEN">12. 06. 2025. kl. 17:35</td>
+                  <td data-label="ORDER"><button>REGISTER</button></td>              </tr>
+              <tr>
+                  <td data-label="WHO">Arnór Dan</td>
+                  <td data-label="WHERE">Skali-3</td>
+                  <td data-label="WHEN">12. 06. 2025. kl. 12:00</td>
+                  <td data-label="ORDER"><button>REGISTER</button></td>              </tr>
+              <tr>
+                  <td data-label="WHO">Aron Can</td>
+                  <td data-label="WHERE">Skali-2</td>
+                  <td data-label="WHEN">12. 06. 2025. kl. 19:15</td>
+                  <td data-label="ORDER"><button>REGISTER</button></td>              </tr>
+              <tr>
+                  <td data-label="WHO">Ice Guys</td>
+                  <td data-label="WHERE">Skali-1,2,3/td>
+                  <td data-label="WHEN">12. 06. 2025. kl. 13:50,14:50,15:30</td>
+                  <td data-label="ORDER"><button>REGISTER</button></td>              </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                  <th colspan="4">Töflu-fótar-texti</th>
+              </tr>
+          </tfoot>
+        </table>
+			<p>&nbsp;</p>
+    </section>
+  </div><!--green bg ends-->
+  <main class="container">
+    <section class="col-2">
+      <blockquote>
+            <p>Ísland er að verða miðpunktur tónlistar og gleði í sumar, þegar Skáli Festival fer fram. Þetta einstaka tónlistarviðburður verður haldinn á þremur staðsetningum: Skáli 1, Skáli 2 og Skáli 3. Hver staður mun hýsa mismunandi tónlistarmenn og skapa þannig ólík tónlistartón og upplifun fyrir gesti.
+            <br>
+            Á Skáli 1 mun MC-Gauti spila og koma með sína einstöku rapplög og orku, sem mun örugglega kveikja upp ástemningu. Á Skáli 2 verður það Arnor Dan sem tekur við og fer með okkur í sína dýpstu tónlistarferðir með kraftmiklum rap og söng. Aron Can mun svo fara á Skáli 3 og bæta við enn meiri fjölbreytni með sínum persónulegu tónlistarstíl og árvekni.
+            <br>
+            En það er ekki bara tónlistin sem færir fólk saman. Á Skáli 4 verður einnig upplifun á borð við matarveitingar með góðu úrvali af íslenskum réttum, þar sem gestir geta fengið sér kræsingar á meðan þeir njóta tónlistarinnar. Herra Hnetusmjör mun einnig mæta til að skapa kraftmikla stemningu, og Ice Guys munu loks bæta við einhverju sérstöku með sígildri íslenskri hip-hop og rap frammistöðu.
+          <br>
+            Fólk frá öllum heimshornum kemur saman til að njóta þessarar ótrúlega helgi með tónlist, mat og góðu félagi. Skáli Festival verður að ógleymanlegri upplifun sem þú vilt ekki missa af!</p>
+        </blockquote>
+      <section>
+        <div class="image-slideshow">
+            <div>
+                <img src="images/summar.jpeg" width="600" height="300" alt="">
+                <div>
+                    <h2>Myndir frá fyrir hátíða</h2>
+                </div>
+            </div>
+            <div>
+                <img src="images/summar2.jpeg" width="600" height="300" alt="">
+                <div>
+                    
+                </div>
+            </div>
+            <div>
+                <img src="images/summar3.jpeg" width="600" height="300" alt="">
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <h4>Áherslutexti H4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis est, reprehenderit labore rerum ratione aliquid illum! Officia nisi esse dolor quis sed porro, amet doloribus, qui odio quas voluptatibus blanditiis.</h4>
+        <h6>Undirmálstexti H6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</h6>
+      </section>
+    </section>
+    <section class="col-2">
+      <div>
+        <h3>Millifyrirsögn</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p>      
+      </div>
+      <div>
+        <p><em>This is not a real form and does not submit or save any information.</em></p>
+        <form method="get" action="takk.html" class="order">
+          <fieldset>
+            <legend>Pöntunarform</legend>
+            <section class="col-2">
+              <p>
+                <label>Fornafn</label> 
+                <input type="text" name="first_name" required placeholder="First name">
+            </p>
+            <p>
+                <label>Eftirnafn</label> 
+                <input type="text" name="last_name" required placeholder="last name">
+            </p>
+            </section>
+            <p>
+                <label>Kyn: </label>
+                <label> Hann
+                    <input type="radio" name="gender" value="Male">
+                </label>   |
+                
+                <label> Hún
+                    <input type="radio" name="gender" value="Female">
+                </label>   |
+              
+                <label> Hán
+                    <input type="radio" name="gender" value="other-none-na">
+                </label>
+            </p>
+            <section class="col-2">
+            <p>
+                  <label>Tölvupóstur</label><br>
+                  <input type="email" name="email" required placeholder="Email">
+              </p>
+              <p>
+                  <label>Símanúmer</label><br>
+                  <input type="tel" name="phonenumber" 
+                    placeholder="7 digits only"
+                    pattern="\d{3}(?:[\-\s]?)\d{4}"><!--Regular Expressions-->
+              </p>
+            </section>
+            <section class="col-3">
+              <p>
+                <label>Miði</label><br>
+                <select>
+                    <option>Aron can</option>
+                    <option>Arnor Dan</option>
+                    <option>Mc Gauti</option>
+                    <option>Herra Hnetusmjör</option>
+                    <option>Ice Guys</option>
+                </select>
+            </p>
+              <p>
+                <label>Dagsetning</label><br>
+                <input type="date" name="dagsetning">
+              </p>
+              <p>
+                <label>Tímasetning</label><br>
+                <input type="time" name="Tími">
+              </p>
+
+            </section>
+            <p>
+                <label>Skilaboð</label><br>
+                <textarea rows="5"></textarea>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" value="termsX">
+                    Sendið mér upplýsingar um X <br>
+                </label>
+                <label>
+                    <input type="checkbox" value="termsY">
+                    Sendið mér upplýsingar um Y
+                </label>
+            </p>
+            <p>
+                <button>Sign up</button>
+                <!--button type="reset">Reset form</button !ALDREI að nota type="reset"-->
+                <button disabled="disabled">Disabled</button>
+            </p>
+          </fieldset>
+      </form>
+      </div>
+    </section>
+  </main>
+  <footer class="container col-3">
+    <nav>
+      <ul>
+        <li><a href="#">Eveniet ducimus pariatur voluptate</a></li>
+        <li><a href="#">Vitae animi, sed provident fuga</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet consectetur</a></li>
+        <li><a href="#">Provident sit aliquid a consequuntur</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul>
+        <li>Eveniet ducimus pariatur voluptate</li>
+        <li>Vitae animi, sed provident fuga</li>
+        <li>Lorem ipsum dolor sit amet consectetur</li>
+        <li>Provident sit aliquid a consequuntur</li>
+      </ul>
+    </nav>
+    <dl>              <!--Description list -->
+      <dt>Nafn</dt>
+        <dd>GJG</dd>
+      <dt>Tölvupóstur</dt>
+        <dd>gjg@tskoli.is</dd>
+      <dt>Vefhönnun</dt>
+        <dd>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+    </dl>
+  </footer>
+    <p class="center">1 spönn, vor 2025.</p>
+  <!--Innskráningarform-->
+  <div id="Login" class="overlay">
+    <div class="popup">
+      <a class="close" href="#">&times;</a>
+  <form method="get" action="takk.html" class="login">
+    <fieldset>
+      <legend>Innskráning</legend>
+      <p>Nafn<input type="text" required></p>
+      <p>Lykilorð: <input type="password" required></p>
+      <p><input type="submit" value="Innskrá"></p>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>

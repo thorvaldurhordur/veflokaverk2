@@ -1,0 +1,8 @@
+Grænn
+rgb 5 184 188
+
+Gulur
+rgb 255 221 85
+
+rauður
+rgb 255 79 105

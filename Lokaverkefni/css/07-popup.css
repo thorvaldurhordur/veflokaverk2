@@ -1,0 +1,85 @@
+  .toggle2 {
+    display: none;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 20;
+  }
+  .toggle {
+    visibility: hidden;
+  }
+  .popup {
+    margin: 2rem;
+    padding: 1rem;
+    background: var(--nc-bg-1);
+    border-radius: 5px;
+    max-width: 37.5rem;
+    position: relative;
+    /*transition: all 5s ease-in-out;*/
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: var(--red-bg);
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  .chatbox {
+    margin: 0;
+    position: fixed;
+    max-width: 37rem;
+    bottom: -80rem;
+    right: 2rem;
+    z-index: 9;
+    transition: all 2s ease;
+    background-color: var(--green-bg);
+  }
+  #Login2 label {
+    position: fixed;
+    right: 2rem;
+    bottom: 1rem;
+    font-size: 2rem;
+    z-index: 99;
+    border: 3px var(--yellow-bg) solid;
+    border-radius: 50%;
+    background-color: var(--yellow-bg);
+  }
+  #toggle2:checked ~ .chatbox {
+    bottom: 2rem;
+  }
+  @media screen and (min-width: 37.5rem){
+    .popup{
+      margin: 2rem auto;
+    }
+    .topnav {
+      background-color: none;
+    }
+  }

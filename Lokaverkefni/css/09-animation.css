@@ -1,0 +1,65 @@
+/*slideset 2 */
+#slideset2 {
+    height: 18rem; 
+    position: relative;
+    overflow: hidden;
+}
+#slideset2> * {
+    animation: 20s autoplay2 infinite ease-in-out;
+    top: 0;  
+    left: 100%;
+    opacity: 0.0;
+}
+@keyframes autoplay2 {
+        0% {top: 100%}
+        4% {top: 0%;
+            opacity:1;
+         }
+        24% {top: 0%}
+        28% {top: -100%;
+            opacity: 0;}
+        100% {top: -100%}
+      }
+#slideset2 > *:nth-child(1) {animation-delay: 0s}
+#slideset2 > *:nth-child(2) {animation-delay: 4s}
+#slideset2 > *:nth-child(3) {animation-delay: 8s}
+#slideset2  > *:nth-child(4) {animation-delay: 12s}
+
+/*fade in - out*/
+
+#slideset6 > * {
+    animation: 12s autoplay6 infinite linear;
+    position: absolute; 
+    top: 3rem; 
+    left: 0; 
+    opacity: 0.0}
+
+@keyframes autoplay6 {
+    0% {opacity: 0.0}
+    4% {opacity: 1.0}
+    33.33% {opacity: 1.0}
+    37.33% {opacity: 0.0}
+    100% {opacity: 0.0}
+  }
+  
+  #slideset6 > *:nth-child(1) {animation-delay: 0s}
+  #slideset6 > *:nth-child(2) {animation-delay: 4s}
+  #slideset6 > *:nth-child(3) {animation-delay: 8s}
+  #slideset6 > *:nth-child(4) {animation-delay: 12s}
+
+
+    .title {
+        display: inline-block;
+        text-align: center;
+        margin: 0 0.5rem;
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+      }
+
+  .logo {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }

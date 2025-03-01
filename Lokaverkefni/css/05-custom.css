@@ -1,0 +1,68 @@
+body {
+    background-image: linear-gradient(red,yellow);
+}
+.bannerBg {
+    animation: colorChange 7s infinite ;
+}
+
+@keyframes colorChange{
+    0%{background-color: #ff1a0e;}
+    25% {background-color:#ff4800 ;}
+    50% {background-color: #ef8409;}
+    75% {background-color: #ffc400;}
+    100% {background-color: #ff1a0e;}
+}
+.logo {
+    font-size: 4rem;
+    color: var(--red-bg);
+}
+/* banner */
+
+.center,
+.value {
+    text-align: center;
+}
+/* HEADER */
+header h1 {
+    font-weight: 300;
+    text-align: center;
+}
+header {
+	padding: 2rem 1.5rem;
+}
+
+header h1,
+header h2,
+header h3 {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+header > *:first-child {
+	margin: 2.5rem 0 0 0;
+	padding-top: 0;
+}
+
+header > *:last-child {
+	margin-bottom: -2.3rem;
+}
+header img{
+    height: 25rem;
+    width: 25rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+@media screen and (min-width:60rem){
+    header > *:first-child {
+        margin: 4rem 0 0 0;
+    }
+}
+@media screen and (min-width:80rem){
+    header > *:first-child {
+        margin: 6rem 0 0 0;
+    }
+    header > *:last-child {
+        margin-bottom: -3rem;
+    }
+}
